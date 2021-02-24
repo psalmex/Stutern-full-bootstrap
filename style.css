@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    padding-top: 30px;
+}
+.btn.btn-primary {
+    background-color: #1bd3c6 !important;
+    color: #ffffff;
+}
+
+nav.navbar {
+    background: #e6f8f9;
+    /* background: #1b1642 #4a4a4a; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: #0db588;
+    font-family: 'Inter', sans-serif;
+    /* #55c2c0 */
+}
+
+#hero {
+    background-color: #1b1642;
+    min-height: 100vh;
+}
+
+#hero * {
+    color: #ffffff;
+}
+
+#hero .display-3 {
+    font-weight: 700;
+}
