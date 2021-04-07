@@ -2,10 +2,12 @@
 <html>
 
 <head>
-    <title>Flutterwave + stuttern</title>
+    <meta charset="UTF-8">
+    <title>STUTERN REP</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href=".script.js">
-    <scrtpt src="script.js"></scrtpt>
+    <scrtpt src="script.js" defer></scrtpt>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
@@ -15,11 +17,73 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand" href="#"><img src="/stut asset/stutern real logo.png" width="auto" height="25"
+                class="d-inline-block align-top" alt="stutern" loading="lazy"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Andriod Developement</a>
+                        <a class="dropdown-item" href="#">Frontend Developement</a>
+                        <a class="dropdown-item" href="#">Data Science</a>
+                        <a class="dropdown-item" href="#">UI/UX Design</a>
+                        <a class="dropdown-item" href="#">Software Development</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        For Employers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Hire Stutern Trained Graduate</a>
+                        <a class="dropdown-item" href="#">Hire from wide pool</a>
+                        <a class="dropdown-item" href="#">Post a job</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ml-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        For Talents
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Take a Course</a>
+                        <a class="dropdown-item" href="#">Apply to a job</a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item active ml-3">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li> -->
+                <li class="nav-item ml-lg-5">
+                    <button type="button" class="btn btn-outline-secondary" href="#">Log in</button>
+                </li>
+                <li class="nav-item ml-lg-2">
+                    <button type="button" class="btn btn-primary" href="#">Take a course</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="/stut asset/stutern S logo 1.jpeg" width="30" height="30" class="d-inline-block align-top"
-                alt="stutern" loading="lazy">
-            STUTERN
+            <img src="/stut asset/stutern real logo.png" height="30" class="d-inline-block align-top" alt="stutern"
+                loading="lazy">
+            STUTERN LOGO
         </a>
         <ul class="nav justify-content-end">
             <li class="nav-item dropdown">
@@ -28,9 +92,11 @@
                     Courses
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Andriod Developement</a>
+                    <a class="dropdown-item" href="#">Frontend Developement</a>
+                    <a class="dropdown-item" href="#">Data Science</a>
+                    <a class="dropdown-item" href="#">UI/UX Design</a>
+                    <a class="dropdown-item" href="#">Software Development</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -39,9 +105,9 @@
                     For Employers
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Hire Stutern Trained Graduate</a>
+                    <a class="dropdown-item" href="#">Hire from wide pool</a>
+                    <a class="dropdown-item" href="#">Post a job</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -50,23 +116,44 @@
                     For Talents
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Take a Course</a>
+                    <a class="dropdown-item" href="#">Apply to a job</a>
                 </div>
             </li>
             <li class="nav-item">
-                <button><a class="nav-link active" href="#">Log In</a></button>
+                <button type="button" class="btn btn-outline-primary">Log in</button>
             </li>
-            <li class="nav-item">
-                <button><a class="nav-link active" href="#">Take a Course</a></button>
+            <li class="nav-item ml-3" ml-2>
+                <button type="button" class="btn btn-secondary">Take a course</button>
             </li>
         </ul>
-    </nav>
+    </nav> -->
+    <section>
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col col-lg-7">
+                    <div class="card-body">
+                        <h4 class="card-title">Get the skills you need for the job you want</h4>
+                        <p class="card-text">
+                            Stutern is a skills development and job placement platform that trains and connects young
+                            African talents with long-term employment.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">Take a cousre</a>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col col-lg-4"><img src="/stut asset/stutern-home-hero-image.png" width="400px"
+                        height="300px" alt="..."></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="card w-75">
                     <div class="card-body">
                         <h4 class="card-title">Get the skills you need for the job you want</h4>
@@ -78,14 +165,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1"><img src="/stut asset/stutern-home-hero-image.png" alt="..."></div>
+            <div class="col-sm-5"><img src="/stut asset/stutern-home-hero-image.png" alt="..."></div>
         </div>
     </div>
     <div class="container">
         <div class="row row-cols-4">
             <div class="col">
-                <div class="cardi" style="width: 18rem;">
-                    <img src="/stut asset/ayowole-2stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/ayowole-2stut.png" class="rounded-circle" alt="...">
                     <div class="card-body">
                         <p class="card-text">Ayowole Adenuga
 
@@ -96,8 +183,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="cardi" style="width: 18rem;">
-                    <img src="/stut asset/silas stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/silas stut.png" class="rounded-circle" alt="...">
                     <div class="card-body">
                         <p class="card-text">Silas Onmbayugh
 
@@ -108,8 +195,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="cardi" style="width: 18rem;">
-                    <img src="/stut asset/jessica stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/jessica stut.png" class="rounded-circle" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -117,6 +204,9 @@
                 </div>
             </div>
             <div class="col">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/tobi stut.png" class="rounded-circle" alt="...">
+
                 <div class="card" style="width: 18rem;">
                     <img src="/stut asset/tobi stut.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -131,8 +221,8 @@
     <div class="container">
         <div class="row row-cols-4">
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="/stut asset/busayo stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/busayo stut.png" class="rounded-circle" alt="...">
                     <div class="card-body">
                         <p class="card-text">Busayo Odesanya
 
@@ -143,8 +233,9 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="/stut asset/chinonso-2 stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/chinonso-2 stut.png" alt="..." class="rounded-circle">
+                    <!-- <img src="/stut asset/chinonso-2 stut.png" class="card-img-top" alt="..."> -->
                     <div class="card-body">
                         <p class="card-text">Chinonso Raymond
 
@@ -155,8 +246,11 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="/stut asset/jide stut1.png" class="card-img-top" alt="...">
+
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/jide stut.png" class="rounded-circle" alt="...">
+
+            
                     <div class="card-body">
                         <p class="card-text">Jide Olutola
 
@@ -167,8 +261,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="/stut asset/eleanor stut.png" class="card-img-top" alt="...">
+                <div class="card" style="width: 10rem;">
+                    <img src="/stut asset/eleanor stut.png" class="rounded-circle" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -178,10 +272,11 @@
         </div>
     </div>
 
-    <p>"I enrolled to Stutern after my NYSC. The programme was intense and I learned a lot. A few months later, I had an interview and was asked to resume my first job."</p>
-<p>Eniola Aminu
+    <p>"I enrolled to Stutern after my NYSC. The programme was intense and I learned a lot. A few months later, I had an
+        interview and was asked to resume my first job."</p>
+    <p>Eniola Aminu
 
-    PRODUCT DESIGNER, COWRYWISE</p>
+        PRODUCT DESIGNER, COWRYWISE</p>
 
     <h2>Trusted by Entrepreneurs and Hiring Managers globally</h2>
     <P>We match employers with trained and vetted candidates that are a perfect fit for their companies. That’s why
@@ -238,6 +333,54 @@
         </div>
     </div>
 
+    <section id="hero" class="d-flex align-item-center">
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                    <p>STUTERN ACCELERATOR</p>
+                    <h1 class="display-3 mb-3">In-demand skills for your technology career</h1>
+                    <p class="lead">Set yourself up for success by registering for any of our curated training courses.
+                        We will
+                        provide you with the
+                        right mentorship, tools and content to upskill yourself.</p>
+                    <button type="button" class="btn btn-primary btn-lg" href="#">View a course</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="display-5">Schools = Degrees<br />Stutern = Jobs</h2>
+                    <p>SGA is a pioneer in education and career transformation, specializing in today’s most in-demand
+                        skills. The leading source for training, staffing, and career transitions, we foster a
+                        flourishing community of professionals pursuing careers they love.</p>
+                </div>
+                <div class="col-6"><img src="/stut asset/accelerator-class side.png" width="500px" height="400px" alt="..."></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        STUTERN ACCELERATOR
+
+        In-demand skills for your technology career
+        Set yourself up for success by registering for any of our curated training courses. We will provide you with the
+        right mentorship, tools and content to upskill yourself.
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 
 </body>
 
